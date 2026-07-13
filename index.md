@@ -51,11 +51,10 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | Page | Summary |
 |---|---|
 | [[10-Projects/auronmedia/_corporate-hub\|Auron Media]] | Digital creation and marketing — websites, branding, AI-powered campaigns. Formerly Jungle Media. auron.media |
-| [[10-Projects/auronmedia/Junglemedia\|Junglemedia]] | Auron Media project overview |
 | [[10-Projects/auronmedia/limited-edition-intro\|Limited Edition Intro]] | Limited edition product introduction strategy |
 | [[10-Projects/auronmedia/signatures\|Signatures]] | Brand identity system — logos, colors, typography, email signatures for all Fortisyn entities |
 | [[10-Projects/auronmedia/social-media-strategy\|Social Media Strategy]] | Content themes, platforms, historical AI-influencer concept — from ChatGPT export |
-| [[chatgpt-conversation-index\|ChatGPT Conversations]] | Index of 36 top business/entity conversations across all 6 entities — SEO, design, brand, books, infra, corporate structure |
+| [[40-Resources/chatgpt-conversation-index\|ChatGPT Conversations]] | Index of 36 top business/entity conversations across all 6 entities — SEO, design, brand, books, infra, corporate structure |
 
 ### La Dolce Niente
 | Page | Summary |
@@ -79,8 +78,6 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | [[10-Projects/pythonslayers/slf-for-roy\|SLF for ROY]] | AI-powered personal companion — tutor, coach, assistant, mentor. Django + React PWA |
 | [[10-Projects/pythonslayers/OneClickLM\|OneClickLM]] | NotebookLM MCP server — TypeScript, auto-healing auth, 6 tools |
 | [[10-Projects/pythonslayers/music-library-missing\|Missing Music Tracks]] | Tracking missing tracks in the music library |
-| [[10-Projects/pythonslayers/Software-Assistant\|Software Assistant]] | Software assistant project overview |
-| [[10-Projects/pythonslayers/Website\|Website]] | Python Slayers website project |
 
 ### Roy Hudlin
 | Page | Summary |
@@ -99,7 +96,6 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | Page | Summary |
 |---|---|
 | [[10-Projects/mercovaretail/_corporate-hub\|Mercova Retail]] | White-label store platform — branded merchandise on your site. Formerly Versa Retail. mercovaretail.com |
-| [[10-Projects/mercovaretail/Versaretail\|Versaretail]] | Mercova Retail project overview |
 | [[10-Projects/mercovaretail/versa-admin\|Versa Admin]] | Admin dashboard for Mercova Retail platform |
 | [[10-Projects/mercovaretail/versa-api\|Versa API]] | API backend for Mercova Retail platform |
 | [[10-Projects/mercovaretail/versa-store\|Versa Store]] | E-commerce storefront engine |
@@ -199,6 +195,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | [[40-Resources/marketing/growth-hacking\|Growth Hacking]] | Test fast, scale what works — UGC, partnerships, data-driven virality |
 | [[40-Resources/marketing/social-media-marketing\|Social Media Marketing]] | Fifth marketing pillar — platforms, planned vs unplanned content, paid vs organic, connects to email/SEO/copywriting |
 | [[40-Resources/django-platform-architecture\|Django Platform Architecture]] | The shared Store→API→Admin triad across Fortisyn Django projects |
+| [[40-Resources/react-frontend-patterns\|React Frontend Patterns]] | Component architecture, state management, SPA vs PWA — how Fortisyn builds frontends across 5+ projects |
 
 ### Raw Sources
 | Page | Summary |

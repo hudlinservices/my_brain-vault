@@ -54,4 +54,4 @@ This concept predates the Auron Media rebrand. The current Auron Agent handles c
 - [[10-Projects/auronmedia/_corporate-hub|Auron Media]]
 - [[90-System/agents/auron-agent|Auron Agent]]
 - [[40-Resources/marketing/social-media-marketing|Social Media Marketing]]
-- [[10-Projects/royhudlin/communication-style|Communication Style]]
+- [[10-Projects/literaryimprint/communication-style|Communication Style]]

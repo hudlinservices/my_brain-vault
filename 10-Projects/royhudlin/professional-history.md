@@ -65,5 +65,5 @@ Currently transitioning from contractor/consultant roles to:
 ## Related
 
 - [[10-Projects/royhudlin/_corporate-hub|Roy Hudlin Hub]]
-- [[10-Projects/royhudlin/creative-work|Creative Work]]
+- [[10-Projects/literaryimprint/creative-work|Creative Work]]
 - [[10-Projects/innovatience/_corporate-hub|Innovatience]]
