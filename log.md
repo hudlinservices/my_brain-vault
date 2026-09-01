@@ -437,3 +437,21 @@ adopted in the generators and verifier: `Fortisyn Directors Resolution - Vancity
 Account.pdf`, `Mercova Directors Resolution - Vancity Bank Account.pdf`,
 `Innovatience Share transfer to Fortisyn.pdf`. Full verification passes 15/15 with no
 extras. Updated: [[10-Projects/corporate-governance|Corporate Governance]].
+
+## [2026-09-01] project | Cluster remediation — junglemeditation.com assets restored
+
+The junglemeditation.com homepage rendered unstyled: every asset URL
+(auron.hyperspeedfiles.com → DO Spaces bucket `auron`) returned 403. Root cause: the
+bucket was empty — `list_objects_v2` showed 0 objects under the site's prefix and
+`style.css` was NoSuchKey. The pod's baked local copy (/usr/share/nginx/html, 241 MB) was
+the surviving full set. Fix: re-uploaded 618 objects (cs/js/im/media/new/assets → the
+junglemeditation/static/ and junglemeditation/media/ prefixes, media mirrored to the
+doubled media/media/ prefix) with public-read ACLs using the app's own credentials inside
+the pod — no app or image changes. Verification: 46/52 homepage asset URLs return 200
+with correct content types. Remaining gaps (unrecoverable — existed only in the wiped
+bucket): 3 article-card webp images and 2 slider backgrounds (100x50_exp_bg3/bg4). Flags:
+other Spaces buckets (mercova, fortisyn, slayers, hud-prod, versa, hudcdn) also deny
+anonymous reads and may be wiped; junglewearclothing.com serves its own assets and is
+unaffected; an SMTP password is present in the junglemeditation pod environment (advise
+rotation); hardening option: rebuild the image to self-host static via the pod's nginx
+(/cs/ /js/ /im/ /media/ locations already exist) to drop the bucket dependency.
