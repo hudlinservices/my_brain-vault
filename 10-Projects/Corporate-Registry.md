@@ -9,7 +9,7 @@ updated: "2026-06-19"
 
 # Corporate Registry
 
-Fortisyn Corporate Umbrella — 11 entities + 1 external client, fully mapped. The legal scaffolding (trust → holding → operating firewall) is documented in [[40-Resources/holding-company-trust-structure|Holding Company & Trust Structure]].
+Fortisyn Corporate Umbrella — 11 entities + 1 external client, fully mapped. The legal scaffolding (trust → holding → operating firewall) is documented in [[40-Resources/holding-company-trust-structure|Holding Company & Trust Structure]]. Statutory corporate records (securities registers, share certificates, directors' resolutions) live in [[10-Projects/corporate-governance|Corporate Governance]].
 
 ## Structure
 

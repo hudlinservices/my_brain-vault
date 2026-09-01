@@ -404,3 +404,36 @@ Initial vault scaffolding created:
 - Corporate alignment started — mapping all Fortisyn entities
 - 57 tasks completed for initial infrastructure
 - Git repository initialized
+
+## [2026-09-01] project | Corporate Governance — bank package finalized
+
+Bank package for the three BC companies finalized and committed (`corporate-governance/`,
+main, 3f16f01). 12 final US Letter PDFs in `bank-package/`, one per document, each company
+in its own brand colours and colour logo; resolutions and the share transfer render in the
+official framed certificate-style layout. Innovatience certificate C-001 recorded as issued
+at incorporation (2025-09-03) and cancelled on the 2026-06-25 transfer. Ownership chain
+confirmed by Roy: Roy → Fortisyn Holdings (200 Class A Common) → Innovatience + Mercova;
+Mercova subscribed directly by Fortisyn, no Roy involvement. New page:
+[[10-Projects/corporate-governance|Corporate Governance]].
+
+## [2026-09-01] project | Corporate Governance — Vancity banking resolutions + renamed print set
+
+Banking resolutions added for the Vancouver City Savings Credit Union (Vancity) business
+accounts of Fortisyn Holdings Ltd. and Mercova Retail Ltd. — each rendered as a final framed
+US Letter PDF (`Fortisyn Banking Resolution - Vancity.pdf`,
+`Mercova Banking Resolution - Vancity.pdf`); Roy Hudlin appointed authorized signing officer,
+signing authority drafted as any one signatory (confirm against Vancity). The print set now
+holds 15 PDFs, renamed throughout to Roy's `{Company} {Document}.pdf` scheme; generators and
+verifier updated to the new names; a blank Innovatience C-002 certificate PDF (broken Firefox
+print) was replaced with a clean render. Updated:
+[[10-Projects/corporate-governance|Corporate Governance]].
+
+## [2026-09-01] project | Corporate Governance — sequential resolution numbering + final renames
+
+All directors' resolutions are now numbered sequentially per company: Fortisyn Nos. 1–3
+(subscriber's shares, s. 85 consideration, Vancity banking), Mercova Nos. 1–2 (share
+issuance, Vancity banking), Innovatience No. 1 (transfer approval). Roy's latest file renames
+adopted in the generators and verifier: `Fortisyn Directors Resolution - Vancity Bank
+Account.pdf`, `Mercova Directors Resolution - Vancity Bank Account.pdf`,
+`Innovatience Share transfer to Fortisyn.pdf`. Full verification passes 15/15 with no
+extras. Updated: [[10-Projects/corporate-governance|Corporate Governance]].

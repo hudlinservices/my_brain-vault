@@ -32,6 +32,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | Page | Summary |
 |---|---|
 | [[10-Projects/fortisyn/_corporate-hub\|Fortisyn]] | Parent holding company — 11 entities, centralized IT + software backbone, 2 recent rebrands |
+| [[10-Projects/corporate-governance\|Corporate Governance]] | BC share registries, certificates & resolutions — 15 final US Letter PDFs in bank-package |
 
 ### Hudlin Services
 | Page | Summary |
