@@ -20,6 +20,7 @@ confirmation_gates:
   - "modify_brand_voice"
   - "spend_money"
 model_preference: "claude-sonnet-4-6"
+status: "dormant"
 max_autonomous_steps: 12
 tags:
   - agent-definition
@@ -29,6 +30,8 @@ version: 1
 created: "2026-06-13"
 ---
 # Social Media Agent
+
+> ⚠️ **Dormant (2026-06-15)** — superseded by the [[90-System/agents/auron-agent|Auron Agent]]. Kept as the historical MindTechArt voice/spec source; posting duties now run through Auron Agent + the [[20-Skills/marketing/social-media-automation|Social Media Automation]] skill.
 
 ## System Prompt
 

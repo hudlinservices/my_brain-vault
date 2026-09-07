@@ -11,6 +11,8 @@ agent: "Marketing Agent"
 
 # Fortisyn Corporate Umbrella — Status Report
 
+> ⚠️ **Superseded (2026-09-07).** This is a 2026-05-19 snapshot. Current authority is [[10-Projects/Corporate-Registry|Corporate Registry]]: **11 entities + 1 external client (AES Engineering)** — not 12. Since this report: Jungle Media → [[10-Projects/auronmedia/_corporate-hub|Auron Media]], Versa Retail → [[10-Projects/mercovaretail/_corporate-hub|Mercova Retail]], and AES is an electrical/lighting/technology consulting firm, not "industrial engineering."
+
 **Generated:** 2026-05-19
 **Source:** All corporate hubs, project files, and vault registry
 

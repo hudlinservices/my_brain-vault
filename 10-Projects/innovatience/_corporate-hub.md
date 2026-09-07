@@ -9,7 +9,7 @@ url: "https://innovatience.ca"
 tags:
   - corporate-hub
   - innovatience
-updated: "2026-06-16"
+updated: "2026-09-07"
 ---
 # Innovatience
 
@@ -30,7 +30,7 @@ Innovatience delivers technical systems consulting across:
 ## Key Client
 
 ### AES Engineering
-The firm's primary client. AES Engineering is an industrial engineering firm that represents the core of Innovatience's current business — and the main source of revenue that funds the broader Fortisyn Group.
+The firm's primary client. AES Engineering is an electrical, lighting & technology consulting engineering firm — the core of Innovatience's current business and the main source of revenue that funds the broader Fortisyn Group. (Industrial buildings are one of many sectors AES serves, not its discipline.)
 
 ## Active Projects
 
@@ -72,6 +72,9 @@ Innovatience monetizes Roy's 35-year practice in [[40-Resources/security-systems
 ```
 
 ## Notes
+
+### 2026-09-07
+- Scout #14: fixed "industrial engineering" label on AES → electrical/lighting/technology, matching [[10-Projects/aesengineering/_corporate-hub|AES hub]] and [[40-Resources/security-systems-consulting|systems-consulting]]. Final identity confirmation still pending Roy (see ⚠️ on the AES page).
 
 ### 2026-06-16
 - Scout #8: cataloged [[10-Projects/innovatience/logo-and-brand|Logo & Brand]] page, added [[40-Resources/security-systems-consulting|systems-consulting]] discipline concept link

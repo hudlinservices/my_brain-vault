@@ -4,7 +4,7 @@ type: "moc"
 tags:
   - moc
   - skill-registry
-updated: "2026-06-09"
+updated: "2026-09-07"
 ---
 
 # Skill Registry
@@ -31,30 +31,6 @@ TABLE WITHOUT ID
   estimated_time AS "Est. Time",
   agent_executable AS "Agent-Ready"
 FROM "20-Skills/marketing"
-WHERE tags INCLUDES "skill"
-SORT file.name ASC
-```
-
-### Design
-```dataview
-TABLE WITHOUT ID
-  file.link AS "Skill",
-  description AS "Description",
-  estimated_time AS "Est. Time",
-  agent_executable AS "Agent-Ready"
-FROM "20-Skills/design"
-WHERE tags INCLUDES "skill"
-SORT file.name ASC
-```
-
-### Video Production
-```dataview
-TABLE WITHOUT ID
-  file.link AS "Skill",
-  description AS "Description",
-  estimated_time AS "Est. Time",
-  agent_executable AS "Agent-Ready"
-FROM "20-Skills/video"
 WHERE tags INCLUDES "skill"
 SORT file.name ASC
 ```

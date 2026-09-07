@@ -1,12 +1,15 @@
 ---
 title: "ChatGPT Conversation Index — Fortisyn"
 date: "2026-06-15"
+updated: "2026-09-07"
 category: index
 source: "Full ChatGPT export — 4 JSON files, 341 conversations, June 2026"
 ---
 # ChatGPT Conversation Index — Fortisyn
 
-36 business/entity conversations. Top ones:
+**Inventory (2026-09-07): 116 conversation files on disk** — 86 filed under entity subdirs (Python Slayers 26, Hudlin Services 30, Literary Imprint 7, Auron Media 6, Roy Hudlin 9, Innovatience 8) + 30 root-level files awaiting filing into entity subdirs (see [[20-Skills/research/gap-priorities|Gap Priorities]]).
+
+The 24 largest business/entity conversations (June 2026 snapshot):
 
 | # | Title | Msgs | Entity |
 |---|-------|------|--------|
@@ -35,6 +38,6 @@ source: "Full ChatGPT export — 4 JSON files, 341 conversations, June 2026"
 | 23 | Mindfulness and stillness | 15 | Roy Hudlin |
 | 24 | Roy's Unique Persona Summary | 17 | Roy Hudlin |
 
-Plus 12 more. Say "query the [title] conversation" and I'll extract it into a wiki page.
+Plus 12 more in the snapshot. Say "query the [title] conversation" and I'll extract it into a wiki page.
 
 Many of these conversations fed into the pages we already created (creative-work, professional-history, social-media-strategy, logo-and-brand). The raw JSON has much more detail.

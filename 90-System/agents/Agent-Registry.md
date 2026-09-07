@@ -4,7 +4,7 @@ type: "moc"
 tags:
   - moc
   - agent-registry
-updated: "2026-05-18"
+updated: "2026-09-07"
 ---
 
 
@@ -22,9 +22,24 @@ TABLE WITHOUT ID
   model_preference AS "Model",
   version AS "Version"
 FROM "90-System/agents"
-WHERE tags INCLUDES "agent-definition"
+WHERE tags INCLUDES "agent-definition" AND status != "dormant"
 SORT file.name ASC
 ```
+
+Active: [[90-System/agents/auron-agent|Auron Agent]], [[90-System/agents/content-agent|Content Agent]], [[90-System/agents/knowledge-scout-agent|Knowledge Scout Agent]], [[90-System/agents/marketing-agent|Marketing Agent]]
+
+## Dormant Agents
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Agent",
+  description AS "Description"
+FROM "90-System/agents"
+WHERE tags INCLUDES "agent-definition" AND status = "dormant"
+SORT file.name ASC
+```
+
+Dormant: [[90-System/agents/social-media-agent|Social Media Agent]] — superseded by Auron Agent (2026-06-15); kept as historical MindTechArt voice spec.
 
 ## Agents by Domain
 

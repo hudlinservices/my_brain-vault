@@ -7,6 +7,7 @@ tags:
   - cross-vault
   - knowledge-graph
 date: "2026-06-15"
+updated: "2026-09-07"
 ---
 # Unified Knowledge Graph
 
@@ -38,7 +39,7 @@ Cross-vault map of everything Roy Hudlin / Fortisyn Group knows. Three vaults, o
 ## Layer 1 — Corporate Structure (Fortisyn Vault)
 
 ### Parent Entity
-- **Fortisyn Group** — holding company, 11 subsidiaries
+- **Fortisyn Group** — holding company, 10 operating subsidiaries (11th row in the table is the parent itself)
 
 ### Entities
 
@@ -110,7 +111,7 @@ Fortisyn Group → all 10 other entities
 | Agent | Function | Status |
 |-------|----------|--------|
 | **Auron Agent** | Social media content — 6 brands, Buffer MCP | Ready |
-| **Knowledge Scout** | Gap detection + research via NotebookLM | Active (7 runs) |
+| **Knowledge Scout** | Gap detection + research via NotebookLM | Active (13 runs; #14 in progress 2026-09-07) |
 | **Social Media Agent** | Legacy — superseded by Auron Agent | Dormant |
 
 ### Skills
@@ -137,7 +138,7 @@ Fortisyn Group → all 10 other entities
 
 ---
 
-## Layer 4 — Personal (Personal Vault — Empty)
+## Layer 4 — Personal (Personal Vault — 231 files)
 
 ### Planned: SLF for ROY
 - Personal AI companion — tutor, coach, assistant, mentor
@@ -168,10 +169,11 @@ Question about infrastructure?  → Fortisyn Vault (pi-fleet, SFF build)
 
 | # | Gap | Where |
 |---|-----|-------|
-| 1 | Personal vault empty — SLF for ROY content not yet migrated | Personal Vault |
-| 2 | AES identity: industrial vs electrical/technology | Fortisyn Vault |
+| 1 | ~~Personal vault empty~~ — now 231 files; SLF for ROY still unbuilt | Personal Vault |
+| 2 | ~~AES identity~~ — vault-wide electrical/lighting/technology (2026-09-07); final confirmation pending Roy | Fortisyn Vault |
 | 3 | 309 ChatGPT AES facts not cross-referenced with Fortisyn entities | Both |
-| 4 | No daily notes since June 13 | Fortisyn Vault |
+| 4 | No daily notes since June 13 — habit still dead (~86 days) | Fortisyn Vault |
+| 5 | Ingest/scout pipeline down since 2026-06-22 — NotebookLM auth needs `npx oneclicklm login` | Fortisyn Vault |
 
 ---
 
@@ -179,9 +181,9 @@ Question about infrastructure?  → Fortisyn Vault (pi-fleet, SFF build)
 
 | Vault | Files | Entities | Projects | Last Active |
 |-------|-------|----------|----------|-------------|
-| Fortisyn Vault | 212 | 11 corporate + 1 client | 20+ | 2026-06-15 |
+| Fortisyn Vault | 243 | 11 corporate + 1 client | 20+ | 2026-09-07 |
 | AES Knowledge Base | 27 | 1 client | 7 | 2026-06-15 |
-| Personal Vault | 0 | 1 person | 1 (SLF) | — |
+| Personal Vault | 231 | 1 person | 1 (SLF) | 2026-09-07 |
 
 ---
 

@@ -455,3 +455,22 @@ anonymous reads and may be wiped; junglewearclothing.com serves its own assets a
 unaffected; an SMTP password is present in the junglemeditation pod environment (advise
 rotation); hardening option: rebuild the image to self-host static via the pod's nginx
 (/cs/ /js/ /im/ /media/ locations already exist) to drop the bucket dependency.
+
+## [2026-07-12] maintenance | React frontend patterns + cleanup (backfilled 2026-09-07)
+
+Created [[40-Resources/react-frontend-patterns|React Frontend Patterns]]; deleted 4 stub pages; fixed 4 broken links; updated index.md. This work was committed (c875002) but never logged at the time — found by scout #14's unlogged-work sweep.
+
+## [2026-09-07] infra | DO registry repair sweep (session HUD-KUBE)
+
+Registry-wide audit + repair: 21 repos, every tag now resolves as a single image manifest. Three ImagePull gaps fixed — fortisyn-website now pinned by tag `:5.0.1`, royhudlin prod 5.0.13 → `:5.0.17`, junglemeditation 1.0.1 → `:5.0.12` (stale `command` override removed; image self-boots via `/entrypoint.sh`). Legacy `meditation` + `jungle-wear` repos deleted on Roy's word. Policy recorded in global `~/.claude/CLAUDE.md`. Filed into [[40-Resources/cloud-deployment-infrastructure|Cloud Deployment & Hosting Infrastructure]] and [[10-Projects/mercovaretail/website/junglemeditation-com|junglemeditation.com]].
+
+## [2026-09-07] scout | Gap sweep #14 (session GOD MODE)
+
+Four gaps approved by Roy. NotebookLM auth still dead — research ran as vault-grounded synthesis (conversation files, skill registries, global CLAUDE.md) per the 2026-06-16 strategy.
+
+- **Contradiction & status sweep (gap 3):** 12 files fixed — Versa Retail residue in [[10-Projects/mercovaretail/junglewear|Jungle Wear]], [[10-Projects/mercovaretail/royhudlin|Roy Hudlin Store]], [[10-Projects/mercovaretail/website/junglemeditation-com|junglemeditation.com]] frontmatter/tags → Mercova Retail; [[90-System/agents/social-media-agent|Social Media Agent]] marked dormant (superseded by Auron Agent) and [[90-System/agents/Agent-Registry|Agent Registry]] dataview now excludes dormant; [[20-Skills/Skill-Registry|Skill Registry]] phantom `20-Skills/design` + `video` sections removed; [[10-Projects/innovatience/_corporate-hub|Innovatience hub]] "industrial engineering" → electrical/lighting/technology consulting; [[10-Projects/innovatience/website|website.md]] broken `[[startup.md]]`/`[[memory.md]]` links → plain text; [[Inbox/fortisyn-status-report|Status Report]] superseded banner; [[40-Resources/chatgpt-conversation-index|Conversation Index]] real inventory (116 files: 86 filed + 30 root pending); [[40-Resources/unified-knowledge-graph|Unified Graph]] stats refreshed; knowledge-scout.md auth contradiction (3 vs 7 failed crons) fixed; index.md stats corrected (5 agents, 5 templates, 3 daily notes).
+- **DO Spaces/CDN + incident filing (gap 2):** [[40-Resources/cloud-deployment-infrastructure|Cloud Deployment]] gained the "Static Assets — DigitalOcean Spaces" section (bucket inventory, 2026-09-01 auron wipe: 618 objects restored / 5 unrecoverable, open items 🔴 SMTP rotation / 🟠 bucket audit / 🟡 nginx self-host) plus the 2026-09-07 registry repair record; junglemeditation-com.md enriched from stub (image `:5.0.12`, self-boot, both incidents). log.md backfilled: [2026-07-12] maintenance (unlogged commit c875002) and [2026-09-07] infra sweep.
+- **Pi Fleet page (gap 1):** new [[10-Projects/hudlinservices/pi-fleet|Pi Fleet]] — 5-Pi inventory (plex1, plex2, sickchill, transmission, transmission2), **"t2" reconciled = transmission2**, Cloudflare Tunnel exposure (cockpit.hudlincloud.com ingress, tunnel `86b2db60-…`), Cockpit admin, daily crons (3:07 AM ingest / 4:13 AM scout), UDM-Pro/Starlink context. Cross-links: Hudlin hub, network-architecture, cloud-deployment, notebooklm, unified graph.
+- **NotebookLM page (gap 4):** new [[40-Resources/notebooklm|NotebookLM]] — notebook/source/query model, Vault Ingest (`1ded6d40`) + persistent Knowledge Scout notebook, oneclicklm cookie auth, single-point-of-failure status (down since 2026-06-22, ~2.5 months). **Repair pending Roy:** run `npx oneclicklm login`, then verify `source_list("1ded6d40")` and bump [[90-System/ingest-log|Ingest Log]].
+
+New gaps filed to gap-priorities.md: agent-run vocabulary cluster, soleriatechnology-com stub, folder-style wikilinks. Human-input items still open: AES identity confirmation, Costa Rica specifics, 30 root conversations filing.

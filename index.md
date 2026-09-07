@@ -38,6 +38,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | Page | Summary |
 |---|---|
 | [[10-Projects/hudlinservices/_corporate-hub\|Hudlin Services]] | Managed IT & Networking — internet, DNS, email, Kubernetes clusters. hudlinservices.com |
+| [[10-Projects/hudlinservices/pi-fleet\|Pi Fleet]] | 5 Raspberry Pis — Plex, SickChill, Transmission, Cockpit behind Cloudflare Tunnel + daily ingest/scout crons |
 
 ### Innovatience
 | Page | Summary |
@@ -55,7 +56,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | [[10-Projects/auronmedia/limited-edition-intro\|Limited Edition Intro]] | Limited edition product introduction strategy |
 | [[10-Projects/auronmedia/signatures\|Signatures]] | Brand identity system — logos, colors, typography, email signatures for all Fortisyn entities |
 | [[10-Projects/auronmedia/social-media-strategy\|Social Media Strategy]] | Content themes, platforms, historical AI-influencer concept — from ChatGPT export |
-| [[40-Resources/chatgpt-conversation-index\|ChatGPT Conversations]] | Index of 36 top business/entity conversations across all 6 entities — SEO, design, brand, books, infra, corporate structure |
+| [[40-Resources/chatgpt-conversation-index\|ChatGPT Conversations]] | Index of 116 exported conversations — 86 filed under entity subdirs, 30 root-level pending filing |
 
 ### La Dolce Niente
 | Page | Summary |
@@ -107,7 +108,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 
 ### ChatGPT Conversations by Entity
 
-85 conversations extracted from Roy's full ChatGPT history, filed under the entity that owns that work:
+86 conversations extracted from Roy's full ChatGPT history, filed under the entity that owns that work (30 more await filing at the root):
 
 | Entity | Conversations | Topics |
 |--------|--------------|--------|
@@ -116,7 +117,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | [[chatgpt-conversations/literary-imprint/|Literary Imprint]] | 7 | Em dash removal, chapter reviews, content writing |
 | [[chatgpt-conversations/auron-media/|Auron Media]] | 6 | Web design, image creation, video, SEO, brand |
 | [[chatgpt-conversations/roy-hudlin/|Roy Hudlin]] | 9 | Mindfulness, stillness, self-discovery, flow |
-| [[chatgpt-conversations/innovatience/|Innovatience]] | 7 | Salary, payroll, business setup, taxes |
+| [[chatgpt-conversations/innovatience/|Innovatience]] | 8 | Salary, payroll, business setup, taxes |
 
 ### Clients (External)
 | Page | Summary |
@@ -176,6 +177,7 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 | [[40-Resources/home-automation-stack\|Home Automation Stack]] | Soleria's foundation — Home Assistant hub, Z-Wave/Zigbee/Matter/Thread, IoT VLAN. Tested at La Dolce Niente |
 | [[40-Resources/holding-company-trust-structure\|Holding Company & Trust Structure]] | The corporate/legal backbone — trust→holding→operating firewall. Aurora Legacy (trust) + Fortisyn (holding). Connects all 11 entities + Costa Rica |
 | [[40-Resources/model-context-protocol\|Model Context Protocol (MCP)]] | The agentic-OS integration layer — hosts/clients/servers, JSON-RPC, tools/resources/prompts. OneClickLM is Fortisyn's MCP server |
+| [[40-Resources/notebooklm\|NotebookLM]] | The vault's research/ingest backend — Vault Ingest (1ded6d40) + persistent Knowledge Scout notebook, oneclicklm cookie auth, the single point of failure behind the downed crons |
 | [[40-Resources/agentic-orchestration\|Agentic Orchestration & Agent Runtime]] | How the vault runs agents — the loop, three-gate model (creative/destructive/ambiguous), locking, resumable run logs. CLAUDE.md principle #6 made real |
 | [[40-Resources/obsidian-pkm-stack\|Obsidian & the Knowledge-Management Stack]] | The vault's substrate — Obsidian + Templater/Dataview/QuickAdd/Shell Commands. Local-first Markdown is *why* an LLM can read it. The knowledge half of the workbench |
 | [[40-Resources/claude-code\|Claude Code & AI-Assisted Development]] | Anthropic's agentic CLI — the tool that runs the scout/lint/ingest workflows and builds every Fortisyn app. The action half of the workbench; an MCP host |
@@ -262,4 +264,4 @@ Catalog of everything in the wiki. The LLM reads this first to find relevant pag
 
 ---
 
-**Stats:** 11 corporate entities (2 rebranded: Jungle Media→Auron Media, Versa Retail→Mercova Retail) + 1 external client (AES Engineering), 30+ projects, 8 skill templates, 4 agents, 6 templates, 4 daily notes. Last updated 2026-06-22.
+**Stats:** 11 corporate entities (2 rebranded: Jungle Media→Auron Media, Versa Retail→Mercova Retail) + 1 external client (AES Engineering), 30+ projects, 8 skills, 5 agents (4 active + 1 dormant), 5 templates, 3 daily notes. Last updated 2026-09-07.

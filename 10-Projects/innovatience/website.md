@@ -9,7 +9,7 @@ tags:
   - innovatience
   - website
 created: "2026-05-18"
-updated: "2026-05-27"
+updated: "2026-09-07"
 ---
 
 # Innovatience Website
@@ -28,8 +28,8 @@ Sampled from `inno_sml_logo.png` on 2026-05-27.
 
 ## Key Files
 
-- [[startup.md]] — Blueprint
-- [[memory.md]] — Memory snapshot
+- `startup.md` — Blueprint (project dir on disk; no vault page)
+- `memory.md` — Memory snapshot (project dir on disk; no vault page)
 
 ## Connections
 
@@ -38,6 +38,9 @@ Sampled from `inno_sml_logo.png` on 2026-05-27.
 - **Started**: 2026-05-18
 
 ## Notes
+
+### 2026-09-07
+- Scout #14: fixed two broken wikilinks (`[[startup.md]]`, `[[memory.md]]`) → plain-text project-file refs (no vault pages exist for them).
 
 ### 2026-05-27
 - Brand colours extracted and approved from logo analysis

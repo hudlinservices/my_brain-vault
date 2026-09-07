@@ -10,6 +10,7 @@ tags:
   - devops
 source: "WebSearch + WebFetch — DigitalOcean DOKS docs, Cloudflare Tunnel guides (2026); grounded in vault ChatGPT-export conversations"
 date: "2026-06-17"
+updated: "2026-09-07"
 ---
 # Cloud Deployment & Hosting Infrastructure
 
@@ -52,6 +53,23 @@ Fortisyn exposes services (and self-hosted boxes like the Plex media server on a
 - **Runs as a systemd service** — `cloudflared` starts on boot and reconnects automatically.
 
 > Vault evidence: *"Plex Cloudflared Tunnel Setup"* (122 messages, [[chatgpt-conversations/hudlin-services/|Hudlin Services]]) — a Raspberry Pi 4 running Ubuntu + Plex behind a Cloudflared tunnel, administered via Cockpit. Related: *"Plex nginx cloudflared"*, *"Cockpit setup with cloudflared"*.
+
+## Static Assets — DigitalOcean Spaces
+
+Storefront media and static assets ship through **DigitalOcean Spaces** buckets (S3-compatible object storage) rather than from the app images. Buckets per brand: `auron` (served via `auron.hyperspeedfiles.com`), plus `mercova`, `fortisyn`, `slayers`, `hud-prod`, `versa`, `hudcdn`. [[10-Projects/mercovaretail/website/junglemeditation-com|junglemeditation.com]] loads its css/js/images from the `auron` bucket.
+
+### 2026-09-01 incident — auron bucket wiped
+
+The junglemeditation.com homepage rendered unstyled when every asset URL in the `auron` bucket returned 403 — `list_objects_v2` showed 0 objects and `style.css` was NoSuchKey. Recovery: re-uploaded **618 objects** from the pod's baked local copy (`/usr/share/nginx/html`, 241 MB) with public-read ACLs, using the app's own credentials — no app or image changes. Verified 46/52 homepage asset URLs return 200. 5 images unrecoverable (3 article-card webp, 2 slider backgrounds).
+
+**Open action items:**
+- 🔴 **Rotate the SMTP password** present in the junglemeditation pod environment.
+- 🟠 **Bucket risk audit** — other buckets (`mercova`, `fortisyn`, `slayers`, `hud-prod`, `versa`, `hudcdn`) also deny anonymous reads and may be wiped the same way.
+- 🟡 **Hardening option** — rebuild the image to self-host static via the pod's nginx (`/cs/ /js/ /im/ /media/` locations already exist) and drop the bucket dependency.
+
+### 2026-09-07 registry repair (session HUD-KUBE)
+
+DO container registry swept: 21 repos, every tag now resolves as a single image manifest (no OCI index + attestation multi-manifests). Three "pod restart = ImagePull" gaps fixed: fortisyn-website now pinned by tag `:5.0.1`, royhudlin prod moved `5.0.13` → `:5.0.17`, junglemeditation moved `1.0.1` → `:5.0.12` (its stale `command` override — old `gunicorn meditation.wsgi` + MED_* env bridge — was removed; the image self-boots via `/entrypoint.sh` from `JMN_*` vars in `junglemeditation-secrets`). Legacy `meditation` and `jungle-wear` repos deleted on Roy's word. Registry policy lives in the global `~/.claude/CLAUDE.md` (build with `--provenance=false --sbom=false`, explicit version tags, keep 3 latest). Also noted: hudlincloud.com returns 526 (origin SSL) while chat.hudlincloud.com is 200.
 
 ## Who Uses It
 
